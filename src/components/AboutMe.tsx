@@ -19,7 +19,7 @@ const AboutMeComponent = () => {
             </p>
         </div>
         <a href="https://github.com/Thomasrr29">
-            <img src="./public/assets/image.webp" className="h-10 w-10 mt-8 hover:cursor-pointer hover:scale-105" alt="" />
+            <img src="../public/assets/image.webp" className="h-10 w-10 mt-8 hover:cursor-pointer hover:scale-105" alt="" />
         </a>
     </div>
 }
