@@ -1,4 +1,4 @@
-/*APP*/
+
 
 import './App.css'
 import AboutMeComponent from './components/AboutMe'
