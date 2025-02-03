@@ -16,7 +16,7 @@ const ProjectsComponent = () => {
                         transition-all duration-300 ease-in-out hover:bg-red-700">
                         <img
                         className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 ease-in-out" 
-                        src="../public/assets/pokemon.png" alt="" />
+                        src="/assets/pokemon.png" alt="" />
                         <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
                             <h3 className="text-2xl font-bold text-blue-800">POKEMON DATABASE</h3>
                             <p className="text-white">Plataforma interactiva que integra múltiples APIs para ofrecer la experiencia más 
@@ -24,7 +24,7 @@ const ProjectsComponent = () => {
                             <div className="w-[100%] flex justify-around bg-blue-500 rounded-3xl p-4">
                                 <img
                                 className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
-                                src="../public/assets/angular.png" alt="" />
+                                src="/assets/angular.png" alt="" />
                             </div>
                         </div>
                         <div className="absolute flex flex-col inset-0 justify-center items-center 
@@ -32,7 +32,7 @@ const ProjectsComponent = () => {
                                 <div>
                                     <img
                                     className="h-16 transition-all duration-300 ease-in-out"   
-                                    src="../public/assets/angular.png" alt="" />
+                                    src="/assets/angular.png" alt="" />
                                 </div>
                                 <a href="https://pokemon-project-pied.vercel.app/"
                                 className="text-white font-bold bg-blue-800 rounded-xl p-5 
@@ -49,7 +49,7 @@ const ProjectsComponent = () => {
                                     transition-all duration-300 ease-in-out">
                         <img
                         className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 ease-in-out" 
-                        src="../public/assets/inventary.png" alt="" />
+                        src="/assets/inventary.png" alt="" />
                         <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
                             <h3 className="text-2xl font-bold text-blue-800">SISTEMA INVENTARIO</h3>
                             <p className="text-white">Un sistema sólido y eficiente que gestiona el inventario con endpoints seguros y transacciones controladas, 
@@ -57,10 +57,10 @@ const ProjectsComponent = () => {
                             <div className="w-[100%] flex justify-around bg-blue-500 rounded-3xl p-4">
                                 <img
                                 className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
-                                src="../public/assets/React.webp" alt="" />
+                                src="/assets/React.webp" alt="" />
                                 <img 
                                 className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"
-                                src="../public/assets/nest.png" alt="" />
+                                src="/assets/nest.png" alt="" />
                             </div>
                         </div>
                         <div className="absolute flex flex-col inset-0 justify-center items-center opacity-0 
@@ -68,10 +68,10 @@ const ProjectsComponent = () => {
                             <div className="flex gap-10">
                                 <img
                                     className="h-12 transition-all duration-300 ease-in-out"   
-                                    src="../public/assets/React.webp" alt="" />
+                                    src="/assets/React.webp" alt="" />
                                     <img 
                                     className="h-12 transition-all duration-300 ease-in-out"
-                                    src="../public/assets/nest.png" alt="" />
+                                    src="/assets/nest.png" alt="" />
                             </div>
                             <a href="https://inventary-frontend-tawny.vercel.app/"
                             className="text-white font-bold bg-blue-800 rounded-xl p-5 
@@ -86,7 +86,7 @@ const ProjectsComponent = () => {
                     hover:cursor-pointer hover:bg-gradient-to-tr from-sky-700 via-sky-500 to-blue-800 hover:scale-102 transition-all duration-300 ease-in-out">
                         <img
                         className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 ease-in-out" 
-                        src="../public/assets/Essential.png" alt="" />
+                        src="/assets/Essential.png" alt="" />
                         <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
                             <h3 className="text-2xl font-extrabold text-blue-800">ESSENTIAL PROJECT</h3>
                             <p className="text-white">Creación de un sitio web en WordPress con un diseño atractivo y funcional, enfocado 
@@ -94,14 +94,14 @@ const ProjectsComponent = () => {
                             <div className="w-[100%] flex justify-around bg-blue-500 rounded-3xl p-4">
                                 <img
                                 className="h-14 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
-                                src="../public/assets/wordpress.png" alt="" />
+                                src="/assets/wordpress.png" alt="" />
                             </div>
                         </div>
                         <div className="absolute flex flex-col inset-0 justify-center items-center opacity-0 
                         group-hover:opacity-100 z-20 gap-8">
                                 <img
                                 className="h-18 transition-all duration-300 ease-in-out"   
-                                src="../public/assets/wordpress.png" alt="" />
+                                src="/assets/wordpress.png" alt="" />
                                 <a href="https://essentialproject.com.co/"
                                     className="text-white font-bold bg-blue-800 rounded-xl p-5 
                                 hover:bg-blue-900 hover:scale-105 transition-all duration-200">
