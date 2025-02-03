@@ -1,0 +1,14 @@
+const FooterComponent = () => {
+
+    return <footer className="w-full bg-gradient-to-r from-purple-700 via-blue-800 to-green-700 p-25 border-none shadow-lg">
+
+
+            <p className="text-center text-white font-semibold">Desarrollador con experiencia en proyectos de software <br/> listo para aportar valor y crecer en mi primera oportunidad laboral</p>
+
+
+        </footer>
+    
+
+}
+
+export default FooterComponent
