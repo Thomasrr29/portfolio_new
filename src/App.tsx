@@ -1,3 +1,5 @@
+/*APP*/
+
 import './App.css'
 import AboutMeComponent from './components/AboutMe'
 import EducationComponent from './components/Education'
