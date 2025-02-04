@@ -3,7 +3,7 @@ const AboutMeComponent = () => {
 
     return <div className="flex flex-col justify-center items-center">
         <div className="w-screen flex justify-center">
-            <p className="w-2xl text-white">
+            <p className="w-[80%] text-white text-sm lg:w-2xl xl:w-2xl">
             Me encanta la tecnología, aprender cosas nuevas y encontrar mejores maneras de hacer las cosas. 
             Disfruto los retos, optimizo procesos y siempre busco soluciones que realmente hagan la diferencia. 
             <br></br>

@@ -9,7 +9,7 @@ const HeaderComponent = () => {
             className="size-40 rounded-full w-46 h-46"
             src="/assets/yo.jpeg" alt="" />
             <h3 className="mt-10 text-6xl text-center font-black text-white"> 
-                ¡HOLA! <br/><br/>YO SOY <span className="text-orange-400">THOMAS</span> RESTREPO
+                ¡HOLA! <br/><br/>SOY <span className="text-orange-400">THOMAS</span> RESTREPO
             </h3>
         </header>
     </>

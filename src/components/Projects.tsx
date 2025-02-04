@@ -11,11 +11,12 @@ const ProjectsComponent = () => {
 
             <div className="w-[65%] flex flex-col gap-5">
                 <a href="https://pokemon-project-pied.vercel.app/">
-                    <div className="group relative flex gap-10 p-10 bg-gray-800 rounded-2xl 
+                    <div className="group relative flex flex-col gap-10 p-10 bg-gray-800 rounded-2xl 
                         hover:cursor-pointer border-2 border-transparent hover:scale-102 
-                        transition-all duration-300 ease-in-out hover:bg-red-700">
+                        transition-all duration-300 ease-in-out hover:bg-red-700 lg:flex-row xl:flex-row">
                         <img
-                        className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 ease-in-out" 
+                        className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all 
+                        duration-300 ease-in-out object-cover" 
                         src="/assets/pokemon.png" alt="" />
                         <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
                             <h3 className="text-2xl font-bold text-blue-800">POKEMON DATABASE</h3>
@@ -44,11 +45,12 @@ const ProjectsComponent = () => {
                     
                 </a>
                 <a href="https://inventary-frontend-tawny.vercel.app/">
-                    <div className="group relative flex gap-10 p-10 bg-gray-800 rounded-2xl hover:cursor-pointer 
+                    <div className="group relative flex flex-col gap-10 p-10 bg-gray-800 rounded-2xl hover:cursor-pointer 
                                     hover:bg-gradient-to-tr from-red-700 via-blue-800 to-cyan-700 hover:scale-102 
-                                    transition-all duration-300 ease-in-out">
+                                    transition-all duration-300 ease-in-out lg:flex-row xl:flex-row">
                         <img
-                        className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 ease-in-out" 
+                        className="w-auto h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 
+                        ease-in-out object-cover" 
                         src="/assets/inventary.png" alt="" />
                         <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
                             <h3 className="text-2xl font-bold text-blue-800">SISTEMA INVENTARIO</h3>
@@ -82,10 +84,12 @@ const ProjectsComponent = () => {
                     </div>
                 </a>
                 <a href="https://essentialproject.com.co/">
-                    <div className="group relative flex gap-10 p-10 bg-gray-800 rounded-2xl 
-                    hover:cursor-pointer hover:bg-gradient-to-tr from-sky-700 via-sky-500 to-blue-800 hover:scale-102 transition-all duration-300 ease-in-out">
+                    <div className="group relative flex flex-col gap-10 p-10 bg-gray-800 rounded-2xl 
+                    hover:cursor-pointer hover:bg-gradient-to-tr from-sky-700 via-sky-500 
+                    to-blue-800 hover:scale-102 transition-all duration-300 ease-in-out lg:flex-row xl:flex-row">
                         <img
-                        className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 ease-in-out" 
+                        className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all 
+                        duration-300 ease-in-out object-cover" 
                         src="/assets/Essential.png" alt="" />
                         <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
                             <h3 className="text-2xl font-extrabold text-blue-800">ESSENTIAL PROJECT</h3>
