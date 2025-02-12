@@ -17,6 +17,10 @@ const EducationComponent = () => {
                 bg-gradient-to-b from-blue-800 via-blue-800 to-green-600 p-10">
                     <img src="/assets/fastapi.png" className="w-[80%] group-hover:scale-105 transition-all duration-200 ease-in-out" alt="" />
                 </div>
+                <div className="group hover:cursor-pointer w-full flex justify-center items-center 
+                bg-gradient-to-b from-blue-800 via-blue-800 to-blue-600 p-10">
+                    <img src="/assets/prompt_engineering.png" className="w-[80%] group-hover:scale-105 transition-all duration-200 ease-in-out" alt="" />
+                </div>
             </div>
             
         </section>
