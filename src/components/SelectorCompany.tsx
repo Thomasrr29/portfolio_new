@@ -24,22 +24,12 @@ const experience: Experience[] = [
     {
         "id": 1,
         "name": "Tutor Kodland",
-        "image": ["/assets/companies/kodland.webp", "/assets/companies/kodland.webp", "/assets/companies/kodland.webp"],
+        "image": ["/assets/companies/kodland.webp", "/assets/companies/yo2.webp", "/assets/companies/kodland2.webp"],
         "company": "Kodland",
         "skills": ["Python", "Effective communication"],
         "description": "Tutor for kids on python and web design",
         "start": "19-02-2024",
         "end": false
-    },
-    {
-      "id": 2,
-      "name": "Google",
-      "image": ["/assets/companies/kodland.webp", "/assets/companies/kodland.webp", "/assets/companies/kodland.webp"],
-      "company": "Google",
-      "description": "Tutor for kids on python and web design",
-      "skills": ["Nest JS", "Effective communication"],
-      "start": "19-12-2024",
-      "end": "25-07-2025"
     }
 ]
 

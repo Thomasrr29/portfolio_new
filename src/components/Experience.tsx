@@ -33,7 +33,7 @@ const ExperienceComponent = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-3 justify-center place-items-center">
                             {
                                 selectedCompany?.image.map((image) => ( 
-                                    <img src={image}></img>
+                                    <img className="h-full object-cover" src={image}></img>
                                 ))
                             }
                         </div>
