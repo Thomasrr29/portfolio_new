@@ -94,8 +94,8 @@ const ProjectsComponent = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="absolute flex flex-col inset-0 justify-center items-center opacity-0 
-                                                group-hover:opacity-100 z-20 gap-8">
+                                <div className="absolute flex-col inset-0 justify-center items-center hidden opacity-0
+                                                group-hover:opacity-100 group-hover:flex z-20 gap-8">
                                     <div className="flex gap-10">
                                         <img
                                             className="h-12 transition-all duration-300 ease-in-out"   
