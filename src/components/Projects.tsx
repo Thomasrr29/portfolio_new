@@ -2,119 +2,113 @@
 
 const ProjectsComponent = () => {
 
+
+    const projects = [
+        {
+          "name": "POKEMON DATABASE",
+          "description": "Plataforma interactiva que integra múltiples APIs para ofrecer la experiencia más completa sobre cada Pokémon, optimizando el uso de datos.",
+          "technologies": ["reactjs"],
+          "abilities": ["Integración de APIs", "Optimización de datos", "Manejo de estados", "Tipado"],
+          "github_url": "https://github.com/Thomasrr29/pokemon_project",
+          "deploy_url": "https://pokemon-project-pied.vercel.app/",
+          "project_img": "pokemon.webp" 
+        },
+        {
+          "name": "SISTEMA INVENTARIO",
+          "description": "Un sistema sólido y eficiente que gestiona el inventario con endpoints seguros y transacciones controladas, garantizando precisión y confianza.",
+          "technologies": ["reactjs", "nestjs"],
+          "abilities": ["Seguridad endpoints", "Transacciones controladas", "Emisión eventos", "Arquitectura Base de datos"],
+          "github_url": "https://github.com/Thomasrr29/Inventary_project",
+          "deploy_url": "https://inventary-frontend-tawny.vercel.app/",
+          "project_img": "inventary.webp" 
+        },
+        {
+          "name": "API SISTEMA DE FIDELIZACIÓN",
+          "description": "Un sistema pensado en manejar la fidelización de clientes por medio de un sistema de puntos con posibilidades de escalar hacia otras bonificaciones y monedas",
+          "technologies": ["reactjs", "fastapi"],
+          "abilities": ["Construcción API", "Pattern Strategy", "Transacción base de datos", "Arquitectura base de datos"],
+          "github_url": "https://github.com/Thomasrr29/Afiliate_system",
+          "deploy_url": "",
+          "project_img": "inventary.webp"
+        },
+        {
+          "name": "BODEGA",
+          "description": "Sistema de bodega con manejo de inicio de sesión, aplicando autenticación con JWT Token",
+          "technologies": ["reactjs", "nestjs"],
+          "abilities": ["JWT Authentication", "Gestión de inventario"],
+          "github_url": "https://github.com/AXrodriguezQ/bodega/tree/dev",
+          "deploy_url": "",
+          "project_img": "inventary.webp"
+        }
+      ];
+
     return <>
 
         <section className="w-full flex flex-col justify-center 
-        items-center mt-20 pb-20 bg-blue-800">
+        items-center pb-20 bg-black-main">
 
-            <h2 className="text-4xl m-20 font-black text-white">PROYECTOS</h2>
-
+            <h2 className="font-black text-4xl m-20 text-white bg-dark-blue p-4 rounded-4xl">PROYECTOS</h2>
+            
             <div className="w-[65%] flex flex-col gap-5">
-                <a href="https://pokemon-project-pied.vercel.app/">
-                    <div className="group relative flex flex-col gap-10 p-10 bg-gray-800 rounded-2xl 
-                        hover:cursor-pointer border-2 border-transparent hover:scale-102 
-                        transition-all duration-300 ease-in-out hover:bg-red-700 lg:flex-row xl:flex-row">
-                        <img
-                        className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all 
-                        duration-300 ease-in-out object-cover" 
-                        src="/assets/pokemon.png" alt="" />
-                        <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
-                            <h3 className="text-2xl font-bold text-blue-800">POKEMON DATABASE</h3>
-                            <p className="text-white">Plataforma interactiva que integra múltiples APIs para ofrecer la experiencia más 
-                                completa sobre cada Pokémon, optimizando el uso de datos.</p>
-                            <div className="w-[100%] flex justify-around bg-blue-500 rounded-3xl p-4">
-                                <img
-                                className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
-                                src="/assets/angular.png" alt="" />
-                            </div>
-                        </div>
-                        <div className="absolute flex flex-col inset-0 justify-center items-center 
-                            opacity-0 group-hover:opacity-100 z-20 gap-8">
-                                <div>
-                                    <img
-                                    className="h-16 transition-all duration-300 ease-in-out"   
-                                    src="/assets/angular.png" alt="" />
-                                </div>
-                                <a href="https://pokemon-project-pied.vercel.app/"
-                                className="text-white font-bold bg-blue-800 rounded-xl p-5 
-                                hover:bg-blue-900 hover:scale-105 transition-all duration-200">
-                                Dale click para visitar el proyecto
-                                </a>
-                        </div>
-                    </div>
-                    
-                </a>
-                <a href="https://inventary-frontend-tawny.vercel.app/">
-                    <div className="group relative flex flex-col gap-10 p-10 bg-gray-800 rounded-2xl hover:cursor-pointer 
-                                    hover:bg-gradient-to-tr from-red-700 via-blue-800 to-cyan-700 hover:scale-102 
+
+                    {
+                        projects.map((project) => (
+
+                            <div className="group relative flex flex-col gap-10 p-10 bg-dark-blue rounded-2xl hover:cursor-pointer 
+                                    hover:bg-gradient-to-tr hover:scale-102 
                                     transition-all duration-300 ease-in-out lg:flex-row xl:flex-row">
-                        <img
-                        className="w-auto h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 
-                        ease-in-out object-cover" 
-                        src="/assets/inventary.png" alt="" />
-                        <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
-                            <h3 className="text-2xl font-bold text-blue-800">SISTEMA INVENTARIO</h3>
-                            <p className="text-white">Un sistema sólido y eficiente que gestiona el inventario con endpoints seguros y transacciones controladas, 
-                                garantizando precisión y confianza.</p>
-                            <div className="w-[100%] flex justify-around bg-blue-500 rounded-3xl p-4">
                                 <img
-                                className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
-                                src="/assets/React.webp" alt="" />
-                                <img 
-                                className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"
-                                src="/assets/nest.png" alt="" />
-                            </div>
-                        </div>
-                        <div className="absolute flex flex-col inset-0 justify-center items-center opacity-0 
-                                        group-hover:opacity-100 z-20 gap-8">
-                            <div className="flex gap-10">
-                                <img
-                                    className="h-12 transition-all duration-300 ease-in-out"   
-                                    src="/assets/React.webp" alt="" />
-                                    <img 
-                                    className="h-12 transition-all duration-300 ease-in-out"
-                                    src="/assets/nest.png" alt="" />
-                            </div>
-                            <a href="https://inventary-frontend-tawny.vercel.app/"
-                            className="text-white font-bold bg-blue-800 rounded-xl p-5 
-                            hover:bg-blue-900 hover:scale-105 transition-all duration-200">
-                                Dale click para visitar el proyecto
-                            </a>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://essentialproject.com.co/">
-                    <div className="group relative flex flex-col gap-10 p-10 bg-gray-800 rounded-2xl 
-                    hover:cursor-pointer hover:bg-gradient-to-tr from-sky-700 via-sky-500 
-                    to-blue-800 hover:scale-102 transition-all duration-300 ease-in-out lg:flex-row xl:flex-row">
-                        <img
-                        className="w-full h-60 rounded-xl group-hover:opacity-0 transition-all 
-                        duration-300 ease-in-out object-cover" 
-                        src="/assets/Essential.png" alt="" />
-                        <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
-                            <h3 className="text-2xl font-extrabold text-blue-800">ESSENTIAL PROJECT</h3>
-                            <p className="text-white">Creación de un sitio web en WordPress con un diseño atractivo y funcional, enfocado 
-                                en ofrecer una experiencia fluida, impactante y efectiva.</p>
-                            <div className="w-[100%] flex justify-around bg-blue-500 rounded-3xl p-4">
-                                <img
-                                className="h-14 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
-                                src="/assets/wordpress.png" alt="" />
-                            </div>
-                        </div>
-                        <div className="absolute flex flex-col inset-0 justify-center items-center opacity-0 
-                        group-hover:opacity-100 z-20 gap-8">
-                                <img
-                                className="h-18 transition-all duration-300 ease-in-out"   
-                                src="/assets/wordpress.png" alt="" />
-                                <a href="https://essentialproject.com.co/"
-                                    className="text-white font-bold bg-blue-800 rounded-xl p-5 
-                                hover:bg-blue-900 hover:scale-105 transition-all duration-200">
-                                    Dale click para visitar el proyecto
-                                </a>
-                        </div>
-                        
-                    </div>
-                </a>  
+                                className="w-auto h-60 rounded-xl group-hover:opacity-0 transition-all duration-300 
+                                ease-in-out object-cover" 
+                                src={`/assets/projects/${project.project_img}`} alt="" />
+                                <div className="flex flex-col justify-between gap-6 group-hover:opacity-0 transition-all duration-300 ease-in-out">
+                                    <h3 className="text-2xl font-bold text-blue-white">{project.name}</h3>
+                                    <p className="text-white">{project.description}</p>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[0]}</span>
+                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[1]}</span>
+                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[2]}</span>
+                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[3]}</span>
+                                    </div>
+                                    <div className="w-[100%] flex justify-around rounded-3xl p-4">
+                                        <img
+                                        className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
+                                        src={`/assets/icons/${project.technologies[0]}.webp`} alt="" />
+                                        <img 
+                                        className={`h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out ${
+                                            project.technologies[1] ? "inline-block": "hidden"
+                                        }`}
+                                        src={`/assets/icons/${project.technologies[1]}.webp`} alt="" />
+                                    </div>
+                                </div>
+                                <div className="absolute flex flex-col inset-0 justify-center items-center opacity-0 
+                                                group-hover:opacity-100 z-20 gap-8">
+                                    <div className="flex gap-10">
+                                        <img
+                                            className="h-12 transition-all duration-300 ease-in-out"   
+                                            src={`/assets/icons/${project.technologies[0]}.webp`} alt="" />
+                                            <img 
+                                            className={`h-12 transition-all duration-300 ease-in-out ${
+                                            project.technologies[1] ? "inline-block": "hidden"}`}
+                                            src={`/assets/icons/${project.technologies[1]}.webp`} alt="" />
+                                    </div>
+                                    <div className="flex gap-10">
+                                        <a href={project.github_url}
+                                        className="text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                        hover:bg-blue-900 hover:scale-105 transition-all duration-200">
+                                            Codigo
+                                        </a>
+                                        <a href={project.deploy_url}
+                                        className={`text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                        hover:bg-blue-900 hover:scale-105 transition-all duration-200 ${project.deploy_url ? "inline" : "hidden"} `}>
+                                            Web
+                                        </a>      
+                                    </div>
+                                </div>
+                            </div> 
+
+                        ))
+                    } 
             </div>
         </section>
     

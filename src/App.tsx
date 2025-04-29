@@ -1,8 +1,7 @@
-
-
 import './App.css'
 import AboutMeComponent from './components/AboutMe'
 import EducationComponent from './components/Education'
+import ExperienceComponent from './components/Experience'
 import FooterComponent from './components/Footer'
 import HeaderComponent from './components/Header'
 import ProjectsComponent from './components/Projects'
@@ -12,12 +11,13 @@ function App() {
 
   return (
     <>
-      <div className='bg-blue-500'>
+      <div className='bg-dark-blue'>
         <HeaderComponent/>
         <AboutMeComponent/>
-        <ProjectsComponent/>
         <TechonologiesComponent/>
+        <ProjectsComponent/>
         <EducationComponent/>
+        <ExperienceComponent/>
         <FooterComponent/>
       </div>
       

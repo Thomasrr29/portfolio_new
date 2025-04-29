@@ -1,28 +1,10 @@
-
-
+import { certificates } from "../data/certificates/certificates"
+import Carousel from "./carousel"
 
 const EducationComponent = () => {
-    return <section className="w-full flex flex-col justify-center items-center pt-10 mt-20 bg-blue-800">
-            <h3 className="text-4xl text-white font-black ">EDUCACIÓN</h3>
-            <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
-                <div className="group hover:cursor-pointer w-full flex flex-col justify-center items-center
-                bg-gradient-to-b from-blue-800 via-blue-800 to-purple-800 p-10 lg:flex-row xl:flex-row">
-                    <img src="/assets/certificado_riwi.png" className="w-[80%] group-hover:scale-105 transition-all duration-200 ease-in-out" alt="" />
-                </div>
-                <div className="group hover:cursor-pointer w-full flex justify-center items-center 
-                bg-gradient-to-b from-blue-800 via-blue-800 to-green-600 p-10">
-                    <img src="/assets/programacion.png" className="w-[80%] group-hover:scale-105 transition-all duration-200 ease-in-out" alt="" />
-                </div>
-                <div className="group hover:cursor-pointer w-full flex justify-center items-center 
-                bg-gradient-to-b from-blue-800 via-blue-800 to-green-600 p-10">
-                    <img src="/assets/fastapi.png" className="w-[80%] group-hover:scale-105 transition-all duration-200 ease-in-out" alt="" />
-                </div>
-                <div className="group hover:cursor-pointer w-full flex justify-center items-center 
-                bg-gradient-to-b from-blue-800 via-blue-800 to-blue-600 p-10">
-                    <img src="/assets/prompt_engineering.png" className="w-[80%] group-hover:scale-105 transition-all duration-200 ease-in-out" alt="" />
-                </div>
-            </div>
-            
+    return <section className="w-full h-[800px] lg:h-[1200px] flex flex-col justify-center items-center py-10 bg-black-main">
+            <h3 className="text-4xl text-white font-black bg-dark-blue p-4 rounded-4xl">EDUCACIÓN</h3>
+            <Carousel slides={certificates} autoPlay={true} autoPlayInterval={6000}/>
         </section>
     
 }

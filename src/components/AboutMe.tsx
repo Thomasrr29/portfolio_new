@@ -1,7 +1,7 @@
 /**/
 const AboutMeComponent = () => {
 
-    return <div className="flex flex-col justify-center items-center">
+    return <div className="flex flex-col justify-center items-center py-20">
         <div className="w-screen flex justify-center">
             <p className="w-[80%] text-white text-sm lg:w-2xl xl:w-2xl">
             Me encanta la tecnología, aprender cosas nuevas y encontrar mejores maneras de hacer las cosas. 
@@ -18,9 +18,14 @@ const AboutMeComponent = () => {
             Siempre estoy en movimiento, explorando, aprendiendo y listo para lo que viene.
             </p>
         </div>
-        <a href="https://github.com/Thomasrr29">
-            <img src="/assets/image.webp" className="h-10 w-10 mt-8 hover:cursor-pointer hover:scale-105" alt="" />
-        </a>
+        <div className="flex gap-16">
+            <a href="https://github.com/Thomasrr29?tab=repositories">
+                <img src="/assets/icons/github.webp" className="h-8 w-8 mt-8 hover:cursor-pointer hover:scale-110 ease-in-out transition-all duration-500" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/thomasrpo/">
+                <img src="/assets/icons/linkedin.webp" className="h-8 w-8 mt-8 hover:cursor-pointer hover:scale-110 ease-in-out transition-all duration-500" alt="" />
+            </a>
+        </div>
     </div>
 }
 
