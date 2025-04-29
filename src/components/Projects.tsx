@@ -27,7 +27,7 @@ const ProjectsComponent = () => {
           "description": "Un sistema pensado en manejar la fidelización de clientes por medio de un sistema de puntos con posibilidades de escalar hacia otras bonificaciones y monedas",
           "technologies": ["reactjs", "fastapi"],
           "abilities": ["Construcción API", "Pattern Strategy", "Transacción base de datos", "Arquitectura base de datos"],
-          "github_url": "https://github.com/Thomasrr29/Afiliate_system",
+          "github_url": "https://github.com/Thomasrr29/affiliate_system.git",
           "deploy_url": "",
           "project_img": "inventary.webp"
         },
