@@ -28,7 +28,7 @@ const experience: Experience[] = [
         "company": "Kodland",
         "skills": ["Python", "Effective communication"],
         "description": "Tutor for kids on python and web design",
-        "start": "19-02-2024",
+        "start": "19-12-2024",
         "end": false
     }
 ]
