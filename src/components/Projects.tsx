@@ -29,7 +29,7 @@ const ProjectsComponent = () => {
           "abilities": ["Construcción API", "Pattern Strategy", "Transacción base de datos", "Arquitectura base de datos"],
           "github_url": "https://github.com/Thomasrr29/affiliate_system.git",
           "deploy_url": "",
-          "project_img": "inventary.webp"
+          "project_img": "git_affiliate.webp"
         },
         {
           "name": "BODEGA",
@@ -70,15 +70,28 @@ const ProjectsComponent = () => {
                                         <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[2]}</span>
                                         <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[3]}</span>
                                     </div>
-                                    <div className="w-[100%] flex justify-around rounded-3xl p-4">
-                                        <img
-                                        className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
-                                        src={`/assets/icons/${project.technologies[0]}.webp`} alt="" />
-                                        <img 
-                                        className={`h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out ${
-                                            project.technologies[1] ? "inline-block": "hidden"
-                                        }`}
-                                        src={`/assets/icons/${project.technologies[1]}.webp`} alt="" />
+                                    <div className="w-[100%] flex flex-col justify-center items-center gap-6 rounded-3xl p-4">
+                                        <div className="flex gap-6">
+                                            <img
+                                            className="h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out"   
+                                            src={`/assets/icons/${project.technologies[0]}.webp`} alt="" />
+                                            <img className={`h-12 group-hover:opacity-0 transition-all duration-300 ease-in-out ${
+                                                project.technologies[1] ? "inline-block": "hidden"
+                                            }`}
+                                            src={`/assets/icons/${project.technologies[1]}.webp`} alt="" />
+                                        </div>
+                                        <div className="flex gap-6">
+                                            <a href={project.github_url}
+                                            className="text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                            hover:bg-blue-900 hover:scale-105 transition-all duration-200">
+                                                Codigo
+                                            </a>
+                                            <a href={project.deploy_url}
+                                            className={`text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                            hover:bg-blue-900 hover:scale-105 transition-all duration-200 ${project.deploy_url ? "inline" : "hidden"} `}>
+                                                Web
+                                            </a> 
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="absolute flex flex-col inset-0 justify-center items-center opacity-0 
