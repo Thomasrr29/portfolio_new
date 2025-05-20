@@ -39,6 +39,15 @@ const ProjectsComponent = () => {
           "github_url": "https://github.com/AXrodriguezQ/bodega/tree/dev",
           "deploy_url": "",
           "project_img": "inventary.webp"
+        },
+        {
+            "name": "Medico para el alma",
+            "description": "Sitio web destinado para una comunidad",
+            "technologies": ["reactjs", "vite"],
+            "abilities": ["Animaciones", "Creación sitio web"],
+            "github_url": "https://github.com/Thomasrr29/medico_para_el_alma",
+            "deploy_url": "https://medico-para-el-alma-j7u8.vercel.app/",
+            "project_img": "medico_para_el_alma.webp"
         }
       ];
 
