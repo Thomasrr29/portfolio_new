@@ -5,13 +5,11 @@ const ProjectsComponent = () => {
 
     const projects = [
         {
-          "name": "POKEMON DATABASE",
-          "description": "Plataforma interactiva que integra múltiples APIs para ofrecer la experiencia más completa sobre cada Pokémon, optimizando el uso de datos.",
-          "technologies": ["reactjs"],
-          "abilities": ["Integración de APIs", "Optimización de datos", "Manejo de estados", "Tipado"],
-          "github_url": "https://github.com/Thomasrr29/pokemon_project",
-          "deploy_url": "https://pokemon-project-pied.vercel.app/",
-          "project_img": "pokemon.webp" 
+          "name": "SISTEMA PAGOS MENSUALIDAD",
+          "description": "Plataforma destinada para que los usuarios efectuen los pagos de su mensualidad de forma segura y rápida.",
+          "technologies": ["nextjs", "mysql"],
+          "abilities": ["Envio de emails", "Asincronismo", "PDFKit", "APIs"],
+          "project_img": "pagos.png" 
         },
         {
           "name": "SISTEMA INVENTARIO",
@@ -32,22 +30,21 @@ const ProjectsComponent = () => {
           "project_img": "git_affiliate.webp"
         },
         {
-          "name": "BODEGA",
-          "description": "Sistema de bodega con manejo de inicio de sesión, aplicando autenticación con JWT Token",
-          "technologies": ["reactjs", "nestjs"],
-          "abilities": ["JWT Authentication", "Gestión de inventario"],
-          "github_url": "https://github.com/AXrodriguezQ/bodega/tree/dev",
-          "deploy_url": "",
-          "project_img": "inventary.webp"
+          "name": "VERIFICACIÓN AFILIACIÓN",
+          "description": "Conexión con API para verificar que un usuario este al día y pueda descargar su certificado",
+          "technologies": ["nextjs", "postgres"],
+          "abilities": ["PDFKit", "Manejo de APIs"],
+          "deploy_url": "https://www.funerariasangabriel.com/certificado-de-afiliacion/",
+          "project_img": "certificado.png"
         },
         {
-            "name": "Medico para el alma",
-            "description": "Sitio web destinado para una comunidad",
-            "technologies": ["reactjs", "vite"],
-            "abilities": ["Animaciones", "Creación sitio web"],
-            "github_url": "https://github.com/Thomasrr29/medico_para_el_alma",
-            "deploy_url": "https://medico-para-el-alma-j7u8.vercel.app/",
-            "project_img": "medico_para_el_alma.webp"
+            "name": "CATALOGO ADAPTATIVO",
+            "description": "Catalogo con CRUD de productos",
+            "technologies": ["nextjs", "supabase"],
+            "abilities": ["Supabase", "UX/UI"],
+            "github_url": "https://github.com/Thomasrr29/mr_inventary",
+            "deploy_url": "https://mrplatano-4i0gkeu4x-thomas-projects-f6a91d8b.vercel.app/",
+            "project_img": "mrplatano.webp"
         }
       ];
 
@@ -58,7 +55,7 @@ const ProjectsComponent = () => {
 
             <h2 className="font-black text-4xl m-20 text-white bg-dark-blue p-4 rounded-4xl">PROYECTOS</h2>
             
-            <div className="w-[65%] flex flex-col gap-5">
+            <div className=" flex flex-col gap-5">
 
                     {
                         projects.map((project) => (
@@ -74,10 +71,12 @@ const ProjectsComponent = () => {
                                     <h3 className="text-2xl font-bold text-blue-white">{project.name}</h3>
                                     <p className="text-white">{project.description}</p>
                                     <div className="flex flex-wrap gap-2">
-                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[0]}</span>
-                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[1]}</span>
-                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[2]}</span>
-                                        <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{project.abilities[3]}</span>
+
+                                        {
+                                            project.abilities.map((ability) => (
+                                                <span className="bg-blue-white rounded-lg p-1 opacity-80 font-semibold text-sm">{ability}</span>
+                                            ))
+                                        }
                                     </div>
                                     <div className="w-[100%] flex flex-col justify-center items-center gap-6 rounded-3xl p-4">
                                         <div className="flex gap-6">
@@ -90,16 +89,24 @@ const ProjectsComponent = () => {
                                             src={`/assets/icons/${project.technologies[1]}.webp`} alt="" />
                                         </div>
                                         <div className="flex gap-6">
-                                            <a href={project.github_url}
-                                            className="text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
-                                            hover:bg-blue-900 hover:scale-105 transition-all duration-200">
-                                                Codigo
-                                            </a>
-                                            <a href={project.deploy_url}
-                                            className={`text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
-                                            hover:bg-blue-900 hover:scale-105 transition-all duration-200 ${project.deploy_url ? "inline" : "hidden"} `}>
-                                                Web
-                                            </a> 
+                                            {
+                                                project.github_url && (
+                                                    <a href={project.github_url}
+                                                        className="text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                                        hover:bg-blue-900 hover:scale-105 transition-all duration-200">
+                                                            Codigo
+                                                    </a>
+                                                )
+                                            }
+                                            {
+                                                project.deploy_url && (
+                                                    <a href={project.deploy_url}
+                                                        className="text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                                        hover:bg-blue-900 hover:scale-105 transition-all duration-200">
+                                                            Web
+                                                    </a>
+                                                )
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -115,16 +122,25 @@ const ProjectsComponent = () => {
                                             src={`/assets/icons/${project.technologies[1]}.webp`} alt="" />
                                     </div>
                                     <div className="flex gap-10">
-                                        <a href={project.github_url}
-                                        className="text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
-                                        hover:bg-blue-900 hover:scale-105 transition-all duration-200">
-                                            Codigo
-                                        </a>
-                                        <a href={project.deploy_url}
-                                        className={`text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
-                                        hover:bg-blue-900 hover:scale-105 transition-all duration-200 ${project.deploy_url ? "inline" : "hidden"} `}>
-                                            Web
-                                        </a>      
+
+                                         {
+                                                project.github_url && (
+                                                    <a href={project.github_url}
+                                                    className="text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                                    hover:bg-blue-900 hover:scale-105 transition-all duration-200">
+                                                        Codigo
+                                                    </a>
+                                                )
+                                            }
+                                            {
+                                                project.deploy_url && (
+                                                    <a href={project.deploy_url}
+                                                    className={`text-white font-bold bg-blue-medium rounded-xl py-2 px-4  
+                                                    hover:bg-blue-900 hover:scale-105 transition-all duration-200 ${project.deploy_url ? "inline" : "hidden"} `}>
+                                                        Web
+                                                    </a>   
+                                                )
+                                            }
                                     </div>
                                 </div>
                             </div> 

@@ -30,6 +30,16 @@ const experience: Experience[] = [
         "description": "Tutor for kids on python and web design",
         "start": "19-12-2024",
         "end": false
+    },
+    {
+        "id": 2,
+        "name": "Desarrollador Software Jr",
+        "image": [],
+        "company": "Funeraria San Gabriel",
+        "skills": ["DevOps", "Business logic", "APIs", "Databases"],
+        "description": "Participating in all stages of development",
+        "start": "08-06-2025",
+        "end": false
     }
 ]
 

@@ -1,7 +1,6 @@
 import { useState } from "react"
 import SelectorCompanyComponent from "./SelectorCompany"
 
-
 const ExperienceComponent = () => {
 
     interface Experience {

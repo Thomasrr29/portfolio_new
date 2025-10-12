@@ -2,7 +2,7 @@ const TechonologiesComponent = () => {
 
     const technologies = [
         { id: 1, name: 'FastAPI', icon: 'fastapi.webp' },
-        { id: 2, name: 'JavaScript', icon: 'javascript.webp' },
+        { id: 2, name: 'Supabase', icon: 'supabase.webp' },
         { id: 3, name: 'MongoDB', icon: 'mongo DB.webp' },
         { id: 4, name: 'MySQL', icon: 'mysql.webp' },
         { id: 5, name: 'NestJS', icon: 'nestjs.webp' },
@@ -10,7 +10,7 @@ const TechonologiesComponent = () => {
         { id: 7, name: 'Python', icon: 'python.webp' },
         { id: 8, name: 'React', icon: 'reactjs.webp' },
         { id: 9, name: 'TypeScript', icon: 'typescript.webp' },
-        { id: 10, name: 'Wordpress', icon: 'wordpress.webp' },
+        { id: 10, name: 'Next JS', icon: 'nextjs.webp' },
         { id: 11, name: 'Tailwind', icon: 'tailwindcss.webp' }
       ];
     
@@ -21,16 +21,16 @@ const TechonologiesComponent = () => {
             {technologies.map((tech) => (
               <li
                 key={tech.id}
-                className="flex items-center p-2 hover:bg-blue-white hover:text-gray-800 
-                rounded-md transition-colors font-semibold group"
+                className="flex items-center justify-center
+                rounded-md transition-colors font-semibold"
               >
-                <div className="flex flex-col items-center justify-center w-28 h-28 p-6 cursor-pointer gap-8">
+                <div className="flex flex-col items-center justify-center w-28 h-28 cursor-pointer gap-2">
                   <img
                     src={`/assets/icons/${tech.icon}`}
                     alt={`${tech.name} icon`}
-                    className="max-w-full max-h-full flex-shrink-0 group-hover:scale-110 duration-500"
+                    className="max-w-full max-h-full flex-shrink-0 group-hover:scale-110 duration-500 bg-blue-200 py-2 px-2 rounded-lg"
                   />
-                  <span className="text-sm font-semibold text-dark-blue bg-blue-white rounded-4xl px-2">{tech.name}</span>
+                  <span className="w-full text-sm font-semibold text-dark-blue bg-blue-200 rounded-lg px-2">{tech.name}</span>
                 </div>
                 
               </li>
